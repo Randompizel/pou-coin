@@ -8,7 +8,6 @@ body {
 header {
   width: 100%;
   padding: 16px 20px;
-  border-bottom: solid 1px #fff;
   position: fixed;
   box-sizing: border-box;
   background: #000;
@@ -158,6 +157,7 @@ p {
     cursor: pointer;
     border: none;
     outline: none;
+  color: #000;
 }
 
 .main-container-bottom-box-meme-img {
