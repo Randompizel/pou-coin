@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;  
+}
+
+header {
+  width: 100%;
+  padding: 16px 20px;
+  border-bottom: solid 1px #fff;
+  position: fixed;
+  box-sizing: border-box;
+  background: #000;
+
+
+}
+
+.header-twitter-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+main {
+
+}
+
+.main-container {
+    padding: 130px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: system-ui;
+}
+
+.main-container-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 30px auto 0 auto;
+}
+
+.main-container-white-small {
+    margin: 80px auto 50px auto;
+    padding: 30px 0;
+    gap: 40px;
+    border-radius: 15px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    width: 1400px;
+}
+
+.main-container-white-small-contianer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.main-container-white-small-contianer-h3 {
+    font-size: 27px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.main-container-white-small-contianer-p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.main-container-bottom {
+    padding: 60px 20px 50px 20px;
+}
+
+.main-container-bottom-box {
+    margin: 0 auto;
+    width: 1150px;
+}
+
+.main-container-bottom-box-top {
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container-bottom-box-memes {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid;
+    gap: 20px;
+}
+
+.main-container-bottom-box-meme-img {
+
+}
+
+.main-container-contract-box {
+    width: 1400px;
+    margin: 50px auto 0 auto;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container-contract-box-h2 {
+    font-size: 25px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+
+
+.main-container-contract-box-span {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+
+
+.main-container-contract-box-btn {
+    height: 40px;
+    width: 100px;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.main-container-bottom-box-meme-img {
+    height: 360px;
+    width: 340px;
+    border-radius: 15px;
+}
+
+
+@media all and  (max-width: 1450px) { 
+    .main-container-white-small {
+        margin: 80px 15px 50px 15px;
+        width: auto;
+        grid-template-columns: auto;
+    }
+    .main-container-contract-box {
+        width: auto;
+    }
+}
+
+
+@media all and  (max-width: 1200px) { 
+    .main-container-bottom-box-memes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .main-container-bottom-box {
+        width: auto;
+    }
+}
+
+
+
+@media all and  (max-width: 750px) { 
+    .main-container-bottom-box-memes {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        align-items: center;
+        display: flex ;
+        flex-direction: column;
+    }
+}
+
+@media all and  (max-width: 470px) { 
+   .main-container-contract-box-span {
+    padding: 0 15px;
+    word-break: break-all;
+    text-align: center;
+   }
+   h1 {
+    text-align: center;
+   }
+}
+
+
+
+
+
+
+

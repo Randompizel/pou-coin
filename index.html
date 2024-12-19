@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css"> 
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content=""
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>POU COIN</title>
+  </head>
+  <body>
+    <header>
+       <a href="https://x.com/poucoin_sol" target="_blank"><img src="twitter-logo.jpg" alt="" class="header-twitter-logo"></a> 
+    </header>
+    <div class="main-container">
+        <h1>$POUCOIN</h1>
+        <p>SHITS EVERYWHERE.</p>
+        <img src="main-lgo.jpg" alt="" class="main-container-logo">
+    </div>
+    <div class="main-container-contract-box">
+      <h2 class="main-container-contract-box-h2">Contract Address</h2>
+      <span class="main-container-contract-box-span">x</span>
+      <button class="main-container-contract-box-btn" id="myText" onclick="copyContent()">Copy</button>
+    </div>
+    <div class="main-container-white-small">
+        <div class="main-container-white-small-contianer">
+           <h3 class="main-container-white-small-contianer-h3">Total Supply</h3>
+           <p class="main-container-white-small-contianer-p">1,000,000,000 $POUCOIN</p>
+        </div>
+        <div class="main-container-white-small-contianer">
+           <h3 class="main-container-white-small-contianer-h3">SYMBOL</h3>
+           <p class="main-container-white-small-contianer-p">$POUCOIN</p>
+        </div>
+         <div class="main-container-white-small-contianer">
+           <h3 class="main-container-white-small-contianer-h3">LP Status        </h3>
+           <p class="main-container-white-small-contianer-p">100% Burned           </p>
+         </div>
+    </div>
+    <div class="main-container-bottom">
+      <div class="main-container-bottom-box">
+       <div class="main-container-bottom-box-top"> 
+        <h1>$POUCOIN MEMES</h1>
+        <p>COMMUNITY SHIT.</p>
+      </div>
+
+      <div class="main-container-bottom-box-memes">
+        <img src="rich-pou.jpg" alt="" class="main-container-bottom-box-meme-img">
+        <img src="crazy-pou.jpg" alt="" class="main-container-bottom-box-meme-img">
+        <img src="pou-beer.jpg" alt="" class="main-container-bottom-box-meme-img">
+        <img src="pou-wc.jpg" alt="" class="main-container-bottom-box-meme-img">
+        <img src="girl-pou.jpg" alt="" class="main-container-bottom-box-meme-img">
+        <img src="zaza-pou.jpg" alt="" class="main-container-bottom-box-meme-img">
+      </div>
+     </div>
+    </div>
+
+    <script>
+        let text = document.getElementById('myText').innerHTML;
+
+        const copyContent = async () => {
+          try {
+            await navigator.clipboard.writeText("x");
+            document.querySelector("#myText").innerHTML = " Copied!"
+            setTimeout(() => {
+                console.log(1)
+              document.querySelector("#myText").innerHTML = " Copy"
+            }, 3 * 1000)
+          } catch (err) {
+            console.error('Failed to copy: ', err);
+          }
+        }
+      </script>
+  </body>
+</html>
