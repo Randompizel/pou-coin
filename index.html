@@ -32,8 +32,7 @@
     </div>
     <div class="main-container-contract-box">
       <h2 class="main-container-contract-box-h2">Contract Address</h2>
-      <span class="main-container-contract-box-span">x</span>
-      <button class="main-container-contract-box-btn" id="myText" onclick="copyContent()">Copy</button>
+      <a href="" target="_blank" class="main-container-contract-box-btn">Buy Here</a>
     </div>
     <div class="main-container-white-small">
         <div class="main-container-white-small-contianer">
@@ -67,21 +66,6 @@
      </div>
     </div>
 
-    <script>
-        let text = document.getElementById('myText').innerHTML;
-
-        const copyContent = async () => {
-          try {
-            await navigator.clipboard.writeText("x");
-            document.querySelector("#myText").innerHTML = " Copied!"
-            setTimeout(() => {
-                console.log(1)
-              document.querySelector("#myText").innerHTML = " Copy"
-            }, 3 * 1000)
-          } catch (err) {
-            console.error('Failed to copy: ', err);
-          }
-        }
-      </script>
+  
   </body>
 </html>
